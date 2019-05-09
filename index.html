@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <link rel="stylesheet" href="uikit-3.1.4/css/uikit.min.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+
+  <body>
+    <main class="main-container">
+      <!-- Mobile Logo & Navigation -->
+      <nav
+        uk-navbar
+        uk-sticky="show-on-up: true"
+        class="mobile-nav uk-navbar-container uk-navbar-transparent uk-hidden@s"
+      >
+        <div>
+          <a href=""
+            ><img
+              src="images/navbar-logos/nav-logo.png"
+              width="100"
+              height="100"
+            />
+          </a>
+        </div>
+        <div>
+          <a class="menu-icon" href="" uk-icon="menu"></a>
+          <div uk-dropdown="animation: uk-animation-scale-up; duration: 650">
+            <ul class="uk-nav uk-dropdown-nav">
+              <li><a href="#home">Home</a></li>
+              <li><a href="#portfolio">Portfolio</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- Main Logo & Navigation -->
+      <nav uk-navbar class="main-navbar uk-navbar-container uk-visible@s">
+        <ul class="main-nav-text uk-navbar-nav uk-navbar-center">
+          <li>
+            <div id="nav-logo" class="nav-logo">
+              <a href="#">
+                <img
+                  src="images/navbar-logos/nav-logo.png"
+                  width="100"
+                  height="100"
+                />
+              </a>
+            </div>
+          </li>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#interests">Interests</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li>
+            <a
+              href="https://www.github.com/erickarodom"
+              target="_blank"
+              uk-icon="icon:github-alt"
+            ></a>
+          </li>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/ericka-odom/"
+              target="_blank"
+              uk-icon="icon:linkedin"
+            ></a>
+          </li>
+        </ul>
+      </nav>
+      <!-- Navigation End -->
+
+      <!-- Mobile Home -->
+      <header id="home" class="header-m uk-hidden@s">
+        <div class="hello">
+          <img
+            class="header-m-texture"
+            src="images/mobile-texture-1-600x600.png"
+            width="600"
+            height="600"
+          />
+          <div class="header-m-home-logo">
+            <img
+              src="images/mobile-logos/mobile-landing-logo.png"
+              width="400"
+              height="400"
+            />
+          </div>
+        </div>
+
+        <div class="accent-one">
+          <img
+            src="images/mobile-texture-2-250x250.png"
+            width="60"
+            height="60"
+          />
+        </div>
+      </header>
+      <!-- End Mobile Home  -->
+      <!-- Main Home -->
+      <section class="main-header uk-visible@s">
+        <div class="main-header-texture"></div>
+        <div class="main-header-logo">
+          <img
+            src="images\desktop-logos\whole-main-logo.png"
+            width="400"
+            ;
+            height="400"
+            ;
+            alt="ericka.r.odom brand logo"
+          />
+        </div>
+        <div class="main-tagline">
+          <h1>
+            Where the <span><em>Ingenuity</em></span
+            ><br />of <span><em>Imangination</em></span>
+          </h1>
+
+          <h1>
+            <span><em>Intersects</em></span> Technology <br />&& Passion
+          </h1>
+        </div>
+      </section>
+      <!-- Mobile Portfolio -->
+      <h2 id="portfolio" class="portfolio-title">Portfolio</h2>
+      <div
+        uk-slider="center: true; autoplay: true; autoplay-interval:3500; pause-on-hover:true;"
+      >
+        <div
+          class="uk-position-relative uk-visible-toggle uk-light"
+          tabindex="-1"
+        >
+          <ul class="uk-slider-items uk-child-width-1 uk-grid">
+            <li>
+              <div class="uk-card uk-card-default">
+                <div class="uk-card-media-top">
+                  <a
+                    ><img
+                      src="images/portfolio screenshots/bootstrap.png"
+                      alt=""
+                  /></a>
+                </div>
+                <div class="uk-card-body">
+                  <h3 class="uk-card-title">Bootstrap/jQuery Site</h3>
+                  <p>
+                    Site Development: HTML, CSS, Bootstrap & jQuery
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="uk-card uk-card-default">
+                <div class="uk-card-media-top">
+                  <a
+                    ><img
+                      src="images/portfolio screenshots/pine-jewelry.png"
+                      alt=""
+                  /></a>
+                </div>
+                <div class="uk-card-body">
+                  <h3 class="uk-card-title">PSD to HTML</h3>
+                  <p>
+                    Site Development: HTML, CSS, Flexbox, Sass, Webpack
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="uk-card uk-card-default">
+                <div class="uk-card-media-top">
+                  <a
+                    ><img
+                      src="images/portfolio screenshots/screenshot-cvf.erickaodom.com-2019.04.28-23-03-55.png"
+                      alt=""
+                  /></a>
+                </div>
+                <div class="uk-card-body">
+                  <h3 class="uk-card-title">WordPress Custom Theme</h3>
+                  <p>
+                    Site Development: HTML, CSS, PHP, write custom code for
+                    WordPress theme files, flexbox & CSS positioning, Webpack,
+                    MAMP, Cyberduck(FTP), file migration(sub-domain setup)
+                  </p>
+                </div>
+              </div>
+            </li>
+          </ul>
+
+          <a
+            class="uk-position-center-left uk-position-small uk-hidden-hover"
+            href="#"
+            uk-slidenav-previous
+            uk-slider-item="previous"
+          ></a>
+          <a
+            class="uk-position-center-right uk-position-small uk-hidden-hover"
+            href="#"
+            uk-slidenav-next
+            uk-slider-item="next"
+          ></a>
+        </div>
+
+        <!-- <ul class="uk-slider-nav uk-dotnav uk-flex-center uk-margin"></ul> -->
+      </div>
+      <!-- End Mobile Portfolio -->
+      <div class="accent-two-cont">
+        <div class="accent-two"></div>
+      </div>
+
+      <!-- Mobile About -->
+      <div class="about-text">
+        <h2 class="about-title" id="help">About</h2>
+        <img
+          class="footer-texture"
+          src="images/mobile-texture-1-600x600.png"
+          width="800"
+          height="600"
+        />
+        <p id="about">
+          Junior Frontend Developer, Problem Solver, Team Whisperer, Lover of
+          Code && Tech Humanist, my passions are coding && creating and
+          developing technological solutions to real problems.
+          <br /><br />
+          I empower individuals, teams, small businesses, start-ups and
+          corporate clients with powerfully engaging && immersive front-facing
+          experiences.
+          <br /><br />
+          In this technological renaissance, my path not only enhances me as an
+          individual but through coding, creative development && teamwork, I am
+          enabled with the opportunity to have a positive impact on my
+          environment and the individuals around me.
+        </p>
+      </div>
+      <!-- End Mobile About -->
+      <!-- Footer -->
+      <footer id="contact" class="footer">
+        <a
+          href="https://github.com/erickarodom"
+          target="_blank"
+          uk-icon="icon: github-alt"
+        ></a>
+        <a
+          href="https://www.linkedin.com/in/ericka-odom/"
+          target="_blank"
+          uk-icon="icon: linkedin"
+        ></a>
+        <p class="copy">&copy;copyright ericka.r.odom</p>
+      </footer>
+      <!-- End Footer -->
+    </main>
+
+    <!-- JS -->
+    <script src="uikit-3.1.4/js/uikit.min.js"></script>
+    <script src="uikit-3.1.4/js/uikit-icons.min.js"></script>
+    <script src="scripts/custom.js"></script>
+  </body>
+</html>

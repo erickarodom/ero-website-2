@@ -1,0 +1,179 @@
+/* Global */
+.main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.mobile-nav,
+.main-navbar {
+  z-index: 10;
+}
+
+/* Mobil Navigation */
+.mobile-nav.uk-navbar {
+  min-width: 350px;
+  max-width: 380px;
+  justify-content: space-between;
+}
+
+.menu-icon {
+  padding: 20px;
+}
+.uk-dropdown {
+  min-width: 80px;
+  max-width: 100px;
+}
+
+/* Main Navigation */
+
+@media (min-width: 640px) {
+  .uk-navbar-container:not(.uk-navbar-transparent) {
+    background-color: #8f8681;
+  }
+}
+@media (min-width: 640px) {
+  .main-nav-text li a {
+    color: #ffffff;
+  }
+}
+.main-navbar {
+  width: 100vw;
+}
+
+/* Mobile Header */
+
+.header-m {
+  position: relative;
+}
+
+.header-m-texture {
+  max-width: 350px;
+  max-height: 350px;
+  clip-path: polygon(0 0, 100% 0, 100% 0, 0 100%);
+  z-index: -1;
+}
+
+.header-m-home-logo {
+  position: absolute;
+  top: -65px;
+  z-index: 5;
+}
+
+.accent-one {
+  position: absolute;
+  right: 0;
+  bottom: -20px;
+  box-shadow: -10px 10px 5px 0px #a5776f;
+  opacity: 0.8;
+}
+
+h2.portfolio-title {
+  margin: 55px 0 25px 0;
+}
+
+h2 {
+  letter-spacing: 1.5px;
+}
+
+@media (min-width: 640px) {
+  .header-m {
+    display: hidden;
+  }
+}
+
+/* Main Home */
+
+.main-header {
+  display: flex;
+  position: relative;
+}
+
+.main-header-texture {
+  height: 400px;
+  width: 500px;
+  background-color: #e1dcd9;
+  clip-path: polygon(0 0, 100% 0, 100% 0, 0 100%);
+  z-index: -10;
+}
+.main-header-logo {
+  z-index: 5;
+  position: absolute;
+  left: 0;
+  top: -75px;
+}
+
+.main-tagline {
+  margin-top: 75px;
+  text-align: center;
+  letter-spacing: 0.8em;
+  z-index: 5;
+}
+
+.uk-h1,
+h1 {
+  font-size: 1.8rem;
+  line-height: 1.6;
+}
+
+/* Mobile Portfolio */
+.uk-slider-items {
+  max-width: 380px;
+  max-height: 500px;
+}
+
+.uk-slider-nav {
+  margin-top: -20px !important;
+}
+
+.uk-card-body,
+.footer {
+  text-align: center;
+}
+
+.accent-two-cont {
+  position: relative;
+}
+
+.accent-two {
+  background-color: #8f8681;
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  left: -180px;
+  bottom: -45px;
+  box-shadow: 10px 10px 5px 0px #a5776f;
+  opacity: 0.8;
+}
+
+.about-text {
+  text-align: center;
+  margin: 50px 0 0 0;
+  padding: 35px;
+  max-width: 400px;
+  position: relative;
+}
+
+.about-text p {
+  text-align: justify;
+  width: 375px;
+  z-index: 10;
+}
+
+.footer-texture {
+  max-width: 350px;
+  height: 350px;
+  clip-path: polygon(100% 100%, 0 100%, 100% 0, 100% 0);
+  z-index: -1;
+  position: absolute;
+  bottom: 45px;
+  right: 30px;
+}
+
+.footer a {
+  padding: 0 20px;
+}
+
+.footer {
+  padding-bottom: 10px;
+}
